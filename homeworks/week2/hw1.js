@@ -3,9 +3,5 @@ function printStars(n) {
   	console.log('*');
   }
 }
-console.log('printStars(1)');
-printStars(1);
-console.log('printStars(3)');
-printStars(3);
-console.log('printStars(6)');
-printStars(6);
+printStars(5);
+
