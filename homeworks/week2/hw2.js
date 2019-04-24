@@ -10,7 +10,7 @@ function capitalize(str) {
   newStr.push(str[i]);
   }
   
-  //印出新陣列，直接印會字符串中間會有","，用 join() 做串接印出正確效果
+  //印出新陣列，用 join() 做串接印出正確效果
   return(newStr.join(''));
 }
 
