@@ -1,16 +1,17 @@
 function capitalize(str) {
-  //¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+  //°µ¤@­Ó°}¦C·Ç³Æ¸Ë­n¿é¥Xªº¦r¦ê
+  
   var newStr=[];
   
-  //¿ str¿¿¿¿ toUpperCase() ¿¿¿¿¿ push ¿¿ newStr
+  //±N­º¦r¥Î toUpperCase Âà¤j¼g«á¡A¥Î push ©ñ¶i newStr
   newStr.push(str[0].toUpperCase());
   
-  //¿ for ¿¿¿¿¿¿¿¿¿¿¿¿ newStr
+  //¥Î for °j°é§â³Ñ¤Uªº¦r©ñ¶i newStr
   for (i = 1;i <= str.length - 1; i++){
   newStr.push(str[i]);
   }
   
-  //¿ join() ¿¿¿¿¿¿¿¿
+  //¥Î join ¨ç¼Æ¦ê±µ©Ò¦³¦r¤¸¥¿½T¿é¥X
   return(newStr.join(''));
 }
 console.log(capitalize('hello'));
