@@ -1,4 +1,4 @@
-``` js
+﻿``` js
 function isValid(arr) {
   for(var i=0; i<arr.length; i++) {
     if (arr[i] <= 0) return 'invalid'

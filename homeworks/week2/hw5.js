@@ -1,35 +1,35 @@
-//°µ¥X join()
+ï»¿//åšå‡º join()
 function join(arr, concatStr) {
   
-  //¥ý¥Î°j°é + splice()¡A¦b°}¦C©_¼Æ¯Á¤Þ®æ¤W´¡¤J concatStr
+  //å…ˆç”¨è¿´åœˆ + splice()ï¼Œåœ¨é™£åˆ—å¥‡æ•¸ç´¢å¼•æ ¼ä¸Šæ’å…¥ concatStr
   for(n = 1; n < arr.length; n += 2){
     arr.splice(n,0,concatStr)
   }
   
-  //ÀYµhªº¨Ó¤F¡Aª½±µ¥Î toString() Âà¦¨¦r¦ê¦^¶Ç¡A¦r¦ê¸Ì·|¦h','
-  //­Y¨Ï¥Î replace(/,/gi,'') ¥N´«±¼','¡A¨º concatStr ¦pªG¬O','¤]·|¤@°_³Q¨ú¥N±¼
-  //¥u¦n¹Á¸Õ°µ¥X console.log(arr[0]+arr[1]+arr[2]...) ªº®ÄªG¥h©¿²¤','
+  //é ­ç—›çš„ä¾†äº†ï¼Œç›´æŽ¥ç”¨ toString() è½‰æˆå­—ä¸²å›žå‚³ï¼Œå­—ä¸²è£¡æœƒå¤š','
+  //è‹¥ä½¿ç”¨ replace(/,/gi,'') ä»£æ›æŽ‰','ï¼Œé‚£ concatStr å¦‚æžœæ˜¯','ä¹Ÿæœƒä¸€èµ·è¢«å–ä»£æŽ‰
+  //åªå¥½å˜—è©¦åšå‡º console.log(arr[0]+arr[1]+arr[2]...) çš„æ•ˆæžœåŽ»å¿½ç•¥','
   
-  //°µ¥X­Ó newString ¦r¦ê¡A¥Î°j°éÅý¥¦¥h¸Ë arr[0]+arr[1]+arr[2]....
+  //åšå‡ºå€‹ newString å­—ä¸²ï¼Œç”¨è¿´åœˆè®“å®ƒåŽ»è£ arr[0]+arr[1]+arr[2]....
   var newString = ''; 
   for(m = 0; m < arr.length; m++){
     newString = newString + arr[m];
   }
-  //©¯¦n¿é¥Xµ²ªG¬O¥¿½Tªº
+  //å¹¸å¥½è¼¸å‡ºçµæžœæ˜¯æ­£ç¢ºçš„
   return newString;
 }
 
-//°µ¥X repeat()
+//åšå‡º repeat()
 function repeat(str, times) {
   
-  //°µ­Ó·s°}¦C~~
+  //åšå€‹æ–°é™£åˆ—~~
   var newRepeatArr =[];
   
-  //¥Î°j°é¸Ë str ¡A¸Ë times ¦¸
+  //ç”¨è¿´åœˆè£ str ï¼Œè£ times æ¬¡
   for( i = 1; i <= times; i++){
     newRepeatArr.push(str);
   }
-  //join() ³s±µ«á¦A¦^¶Ç
+  //join() é€£æŽ¥å¾Œå†å›žå‚³
   return newRepeatArr.join('');
 }
 console.log(join(["a", 1, "b", 2, "c", 3], ','));
