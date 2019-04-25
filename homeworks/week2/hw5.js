@@ -1,36 +1,30 @@
-ï»¿//åšå‡º join()
+//  °µ¥X join()
 function join(arr, concatStr) {
-  
-  //å…ˆç”¨è¿´åœˆ + splice()ï¼Œåœ¨é™£åˆ—å¥‡æ•¸ç´¢å¼•æ ¼ä¸Šæ’å…¥ concatStr
-  for(n = 1; n < arr.length; n += 2){
-    arr.splice(n,0,concatStr)
+  //  ¥ý¥Î°j°é + splice()¡A¦b°}¦C©_¼Æ¯Á¤Þ®æ¤W´¡¤J concatStr
+  for (let n = 1; n < arr.length; n += 2) {
+    arr.splice(n, 0, concatStr);
   }
-  
-  //é ­ç—›çš„ä¾†äº†ï¼Œç›´æŽ¥ç”¨ toString() è½‰æˆå­—ä¸²å›žå‚³ï¼Œå­—ä¸²è£¡æœƒå¤š','
-  //è‹¥ä½¿ç”¨ replace(/,/gi,'') ä»£æ›æŽ‰','ï¼Œé‚£ concatStr å¦‚æžœæ˜¯','ä¹Ÿæœƒä¸€èµ·è¢«å–ä»£æŽ‰
-  //åªå¥½å˜—è©¦åšå‡º console.log(arr[0]+arr[1]+arr[2]...) çš„æ•ˆæžœåŽ»å¿½ç•¥','
-  
-  //åšå‡ºå€‹ newString å­—ä¸²ï¼Œç”¨è¿´åœˆè®“å®ƒåŽ»è£ arr[0]+arr[1]+arr[2]....
-  var newString = ''; 
-  for(m = 0; m < arr.length; m++){
-    newString = newString + arr[m];
+  //  ÀYµhªº¨Ó¤F¡Aª½±µ¥Î toString() Âà¦¨¦r¦ê¦^¶Ç¡A¦r¦ê¸Ì·|¦h','
+  //  ­Y¨Ï¥Î replace(/,/gi,'') ¥N´«±¼','¡A¨º concatStr ¦pªG¬O','¤]·|¤@°_³Q¨ú¥N±¼
+  //  ¥u¦n¹Á¸Õ°µ¥X console.log(arr[0]+arr[1]+arr[2]...) ªº®ÄªG¥h©¿²¤','
+  //  °µ¥X­Ó newString ¦r¦ê¡A¥Î°j°éÅý¥¦¥h¸Ë arr[0]+arr[1]+arr[2]....
+  let newString = '';
+  for (let m = 0; m < arr.length; m += 1) {
+    newString += arr[m];
   }
-  //å¹¸å¥½è¼¸å‡ºçµæžœæ˜¯æ­£ç¢ºçš„
+  //  ©¯¦n¿é¥Xµ²ªG¬O¥¿½Tªº
   return newString;
 }
-
-//åšå‡º repeat()
+//  °µ¥X repeat()
 function repeat(str, times) {
-  
-  //åšå€‹æ–°é™£åˆ—~~
-  var newRepeatArr =[];
-  
-  //ç”¨è¿´åœˆè£ str ï¼Œè£ times æ¬¡
-  for( i = 1; i <= times; i++){
+  //  °µ­Ó·s°}¦C~~
+  const newRepeatArr = Array(0);
+  //  ¥Î°j°é¸Ë str ¡A¸Ë times ¦¸
+  for (let i = 1; i <= times; i += 1) {
     newRepeatArr.push(str);
   }
-  //join() é€£æŽ¥å¾Œå†å›žå‚³
+  //  join() ³s±µ«á¦A¦^¶Ç
   return newRepeatArr.join('');
 }
-console.log(join(["a", 1, "b", 2, "c", 3], ','));
+console.log(join(['a', 1, 'b', 2, 'c', 3], ','));
 console.log(repeat('a', 5));
