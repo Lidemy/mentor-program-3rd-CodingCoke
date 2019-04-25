@@ -1,11 +1,11 @@
-ï»¿function reverse(str){
-  //åšä¸€å€‹æ–°é™£åˆ—æº–å‚™è£åè½‰çš„å­—ä¸²
-  var newStr=[];  
-  //åˆ©ç”¨è¿´åœˆï¼Œå¾åŸå­—ä¸²æœ€å°¾ç«¯çš„ç´¢å¼•é–‹å§‹å€’å›ä¾†ï¼Œä¾åºæ”¾å…¥æ–°é™£åˆ—(ç”¨push)
-  for (i = str.length-1 ; i >= 0 ; i--){
-    newStr.push(str[i])
+function reverse(str) {
+  //  °µ¤@­Ó·s°}¦C·Ç³Æ¸Ë¤ÏÂàªº¦r¦ê
+  const newStr = Array(0);
+  //  §Q¥Î°j°é¡A±q­ì¦r¦ê³Ì§Àºİªº¯Á¤Ş¶}©l­Ë¦^¨Ó¡A¨Ì§Ç©ñ¤J·s°}¦C(¥Îpush)
+  for (let i = str.length - 1; i >= 0; i -= 1) {
+    newStr.push(str[i]);
   }
-  //å°å‡ºæ–°é™£åˆ—ï¼Œç›´æ¥å°æœƒå­—ç¬¦ä¸²ä¸­é–“æœƒæœ‰","ç”¨ join() ä¸²æ¥å­—ç¬¦ä¸²ï¼Œå°å‡ºæ•ˆæœ
-  console.log(newStr.join(""));
+  //  ¦L¥X·s°}¦C¡Aª½±µ¦L·|¦r²Å¦ê¤¤¶¡·|¦³","¥Î join() ¦ê±µ¦r²Å¦ê¡A¦L¥X®ÄªG
+  console.log(newStr.join(''));
 }
-reverse("hello");
+reverse('hello');
