@@ -1,8 +1,6 @@
 function capitalize(str) {
-  //  準備裝要輸出的字串
+  // 把首字用 toUpperCase() 轉大寫後放入 newStr 陣列
   const newStr = Array(str[0].toUpperCase());
-  //  將首字用 toUpperCase 轉大寫後，用 push 放進 newStr
-  //  newStr.push(str[0].toUpperCase());
   //  用 for 迴圈把剩下的字放進 newStr
   for (let i = 1; i <= str.length - 1; i += 1) {
     newStr.push(str[i]);
