@@ -9,7 +9,7 @@ function findFactor(n) {
 }
 
 function isPrime(n) {
-  return ((findFactor(n).length) === 2);
+  return findFactor(n).length === 2;
 }
 
 module.exports = isPrime;
