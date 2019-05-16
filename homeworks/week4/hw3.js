@@ -2,17 +2,16 @@ const request = require('request');
 const process = require('process');
 
 const sourceLink = 'https://lidemy-book-store.herokuapp.com/books/';
-const listFunction = () => {
+const listBooks = () => {
   request(sourceLink, (error, response, body) => {
     const json = JSON.parse(body);
-    const numberOfBook = Object.keys(json).length;
-    for (let i = 0; i < numberOfBook; i += 1) {
+    for (let i = 0; i < json.length; i += 1) {
       console.log(`${json[i].id}${' '}${json[i].name}`);
     }
   });
 };
 
-const readFunction = () => {
+const findBooks = () => {
   if (process.argv[3] !== undefined) {
     request(`${sourceLink}${process.argv[3]}`, (error, response, body) => {
       if (JSON.parse(body).id === undefined) {
@@ -26,7 +25,7 @@ const readFunction = () => {
   }
 };
 
-const deleteFunction = () => {
+const deleteBooks = () => {
   if (process.argv[3] !== undefined) {
     request.delete(`${sourceLink}${process.argv[3]}`, (error, response) => {
       if (response.statusCode === 404) {
@@ -40,7 +39,7 @@ const deleteFunction = () => {
   }
 };
 
-const createFunction = () => {
+const createBooks = () => {
   if (process.argv[3] !== undefined) {
     request.post({
       url: sourceLink,
@@ -53,7 +52,7 @@ const createFunction = () => {
   }
 };
 
-const updateFunction = () => {
+const updateBooks = () => {
   if (process.argv[3] !== undefined && process.argv[4] !== undefined) {
     request.patch({
       url: `${sourceLink}${process.argv[3]}`,
@@ -72,19 +71,19 @@ const updateFunction = () => {
 
 switch (process.argv[2]) {
   case 'list':
-    listFunction();
+    listBooks();
     break;
   case 'read':
-    readFunction();
+    findBooks();
     break;
   case 'delete':
-    deleteFunction();
+    deleteBooks();
     break;
   case 'create':
-    createFunction();
+    createBooks();
     break;
   case 'update':
-    updateFunction();
+    updateBooks();
     break;
   default:
     console.log('Use 1.[list] / 2.[read + id] / 3.[delete + id] / 4.[create + book name] / 5.[update + id + new name] to run hw3.js');

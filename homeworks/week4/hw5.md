@@ -28,7 +28,7 @@ Base URL: https://MyGroup.com
 >Method:`GET`
 >Path:`/kitchens/`
 >Parameters:`id` or `name`. For a query to be valid, `id` or `name` must be specified.
->Example request:`/kitchens?id = 1`
+>Example request:`/kitchens?id=1`
 >Example response:
 >>`["id":1, "name":"cucinapasta", "staff": 20]`
 
@@ -36,19 +36,19 @@ Base URL: https://MyGroup.com
 >Method:`DELETE`
 >Path:`/kitchens/`
 >Parameters:`id` or `name`. For a query to be valid, `id` or `name` must be specified.
->Example request:`/kitchens?id = 1`
+>Example request:`/kitchens?id=1`
 >Example response: none
 
 4.新增餐廳
 >Method:`POST`
 >Path:`/kitchens/`
 >Parameters:`name` and `staff`. For a query to be valid, `name` and `staff`must be specified.
->Example request:`/kitchens?name = Ruth's Chris&staff = 20`
+>Example request:`/kitchens?name=Ruth's Chris&staff=20`
 >Example response:`["id":10, "name":"Ruth's Chris", "staff": 20]`
 
 5.更改餐廳
 >Method:`PATCH`
 >Path:`/kitchens/`
 >Parameters:`id`,`name` and `staff`. For a query to be valid, `id`must be specified.
->Example request:`/kitchens?id = 2&staff = 50`
+>Example request:`/kitchens?id=2&staff=50`
 >Example response:`["id": 2, "name":"Ding Taifeng", "staff": 50]`
