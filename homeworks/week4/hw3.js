@@ -42,7 +42,10 @@ const deleteFunction = () => {
 
 const createFunction = () => {
   if (process.argv[3] !== undefined) {
-    request.post({ url: sourceLink, form: { name: process.argv[3] } }, () => {
+    request.post({
+      url: sourceLink,
+      form: { name: process.argv[3] },
+    }, () => {
       console.log('Sucess');
     });
   } else {
@@ -52,7 +55,10 @@ const createFunction = () => {
 
 const updateFunction = () => {
   if (process.argv[3] !== undefined && process.argv[4] !== undefined) {
-    request.patch({ url: `${sourceLink}${process.argv[3]}`, form: { name: process.argv[4] } }, (error, response) => {
+    request.patch({
+      url: `${sourceLink}${process.argv[3]}`,
+      form: { name: process.argv[4] },
+    }, (error, response) => {
       if (response.statusCode === 404) {
         console.log('Did not work, make sure the id is exisit');
       } else {
