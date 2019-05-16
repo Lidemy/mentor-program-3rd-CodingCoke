@@ -4,8 +4,7 @@ const process = require('process');
 if (process.argv[2] === 'list') {
   request('https://lidemy-book-store.herokuapp.com/books/', (error, response, body) => {
     const json = JSON.parse(body);
-    const numberOfBook = Object.keys(json).length;
-    for (let i = 0; i < numberOfBook; i += 1) {
+    for (let i = 0; i < json.length; i += 1) {
       console.log(`${json[i].id}${' '}${json[i].name}`);
     }
   });
