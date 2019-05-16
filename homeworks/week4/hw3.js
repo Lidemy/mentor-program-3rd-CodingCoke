@@ -1,8 +1,9 @@
 const request = require('request');
 const process = require('process');
 
+const sourceLink = 'https://lidemy-book-store.herokuapp.com/books/';
 const listFunction = () => {
-  request('https://lidemy-book-store.herokuapp.com/books/', (error, response, body) => {
+  request(sourceLink, (error, response, body) => {
     const json = JSON.parse(body);
     const numberOfBook = Object.keys(json).length;
     for (let i = 0; i < numberOfBook; i += 1) {
@@ -13,7 +14,7 @@ const listFunction = () => {
 
 const readFunction = () => {
   if (process.argv[3] !== undefined) {
-    request(`https://lidemy-book-store.herokuapp.com/books/${process.argv[3]}`, (error, response, body) => {
+    request(`${sourceLink}${process.argv[3]}`, (error, response, body) => {
       if (JSON.parse(body).id === undefined) {
         console.log('book not found, try another id');
       } else {
@@ -27,8 +28,12 @@ const readFunction = () => {
 
 const deleteFunction = () => {
   if (process.argv[3] !== undefined) {
-    request.delete(`https://lidemy-book-store.herokuapp.com/books/${process.argv[3]}`, () => {
-      console.log(`book id:${process.argv[3]} does not exist or it has been deleted `);
+    request.delete(`${sourceLink}${process.argv[3]}`, (error, response) => {
+      if (response.statusCode === 404) {
+        console.log(`Did not work, book id:${process.argv[3]} does not exist`);
+      } else {
+        console.log(`Sucess, book id:${process.argv[3]} has been deleted `);
+      }
     });
   } else {
     console.log('Use "delete + id" to delete book');
@@ -37,8 +42,8 @@ const deleteFunction = () => {
 
 const createFunction = () => {
   if (process.argv[3] !== undefined) {
-    request.post({ url: 'https://lidemy-book-store.herokuapp.com/books/', form: { name: process.argv[3] } }, () => {
-      console.log('Already done');
+    request.post({ url: sourceLink, form: { name: process.argv[3] } }, () => {
+      console.log('Sucess');
     });
   } else {
     console.log('Use "create + book name" to create book');
@@ -47,8 +52,12 @@ const createFunction = () => {
 
 const updateFunction = () => {
   if (process.argv[3] !== undefined && process.argv[4] !== undefined) {
-    request.patch({ url: `https://lidemy-book-store.herokuapp.com/books/${process.argv[3]}`, form: { name: process.argv[4] } }, () => {
-      console.log('Already updated');
+    request.patch({ url: `${sourceLink}${process.argv[3]}`, form: { name: process.argv[4] } }, (error, response) => {
+      if (response.statusCode === 404) {
+        console.log('Did not work, make sure the id is exisit');
+      } else {
+        console.log('Sucess');
+      }
     });
   } else {
     console.log('Use "update + id + new name" to update book');
