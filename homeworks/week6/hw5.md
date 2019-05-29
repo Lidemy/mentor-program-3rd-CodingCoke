@@ -9,14 +9,12 @@
 
 ## 請問 display: inline, block 跟 inline-block 的差別是什麼？
 display 是 HTML 每種元素都有的屬性，分為 inline, block兩種，通常可以透過 CSS 設定修改。
-* inline: 行內元素，元素不會換行，不能設定高度與寬度，屬性為 inline 的元素可以水平顯示在同一行上面。 
-* block: 區塊元素，每增加一個區塊元素都會從新的一行開始，也就是會換行，並且可以設定長度跟寬度。
-* inline-block: 為了排版好用應運而生的屬性，當設定元素 display 為 inline-block，則除保有 inline 的特性可以水平排列外，也有 block 的特性可以設定長寬。
+* inline: 行內元素，元素不會換行，不能設定高度與寬度，屬性為 inline 的元素可以水平顯示在同一行上面。使用時機：想水平呈現元素時，比如說<ul><li>標籤預設是垂直的，想要做水平呈現可以更改成 inline。 
+* block: 區塊元素，每增加一個區塊元素都會從新的一行開始，也就是會換行，並且可以設定長度跟寬度。一般想做出有固定長寬的排版時，都要轉成有 block 特性的元素。 
+* inline-block: 排版好用的屬性，當設定元素 display 為 inline-block，除保有 inline 的特性可以水平排列外，也有 block 的特性可以設定長寬。使用時機：通常是替 block 元素排版時候使用，可以避免換行。
 
 ## 請問 position: static, relative, absolute 跟 fixed 的差別是什麼？
-* static: 元素預設的 position 屬性，不會特別被定位，照著瀏覽器、 HTML 的安排自動排版。
-* fixed: 透過 top / right / bottom / left 設定位置，設定後最大的特性就是網頁滾動時，會始終固著在螢幕上相同的位置，怎麼滑網頁都不會被滑走。
-* relative: 不特別設定的話，跟 static 一樣。若透過 top / right / bottom / left 設定位置，會讓元素依據原本的位置去做調整位移，位移時不影響其他元素的位置。
-* absoult：會依隨著 relative 元素的位置做絕對定位，永遠出現在 relative 元素的固定座標上，若上層都沒定義 relative ，則依隨 body 元素的位置。
-
-
+* static: 元素預設的 position 屬性，不會特別被定位，照著瀏覽器、 HTML 的安排自動排版。使用時機：就是預設，不需要特別定位時都是它。
+* fixed: 透過 top / right / bottom / left 設定位置，設定後最大的特性就是網頁滾動時，會始終固著在螢幕上相同的位置，怎麼滑網頁都不會被滑走。使用時機：想要讓使用者瀏覽網頁時可以輕易看到點擊的元素，比如說回上一頁、導覽列等。
+* relative: 不特別設定的話，跟 static 一樣。若透過 top / right / bottom / left 設定位置，會讓元素依據原本的位置去調整位移，位移時不影響其他元素的位置(「真身」依然留在原位置佔有範圍，視覺上看移動了)。使用時機：用 margin 排版，影響到隔壁的元素位置難以安排時，可以考慮用 relative 依據原位置調整偏移量，也可以搭配 absoulte 做出一些更細節有變化的排版。
+* absoulte：會依隨著 relative 元素的位置做絕對定位，永遠出現在 relative 元素的固定座標上，若上層都沒定義 relative ，則依隨 body 元素的位置。使用時機：只要確定好參照的父元素，absoulte 元素可以安排在任何的位置，而不對其它元素位置造成影響(會重疊蓋過)，如果內容想浮在其它元素上面可以使用，比如說：浮在圖上的說明對話框。
