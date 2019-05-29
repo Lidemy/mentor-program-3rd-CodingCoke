@@ -1,0 +1,212 @@
+﻿html {
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+a {
+    text-decoration:none;
+    color: gray;
+}
+
+a:hover {
+    border-color: black;
+    color: black;
+}
+
+nav {
+    width: 100%;
+    height: 65px;
+    background: white;
+    box-shadow: 4px 4px 5px rgba(223, 218, 218, 0.5);
+}
+
+nav > ul {
+    position: absolute;
+    right: 20%;
+    top: 5px;
+}
+
+nav > ul li {
+    padding: 10px;
+    list-style-type: none;
+    display: inline;
+    vertical-align: baseline;
+    font-size: 24px;
+    color: gray;
+
+}
+
+nav > ul li > button {
+    background: white;
+    color: gray;
+    padding: 5px 15px;
+    font-size: 14px;;
+    border: 1px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 4px;
+    margin-bottom: 1%;
+}
+
+#userAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+
+#MediumIcon {
+    margin: 0 0 0 0;
+    padding: 20px;
+    font-size: 35px;
+    line-height: 25px;
+    position: absolute;
+    left: 15%;
+}
+
+article {
+    max-width: 760px;
+    margin: 3% auto;
+}
+
+h1 {
+    font-size: 42px;
+    padding-bottom: 2%;
+    margin: 0;
+}
+
+h2 {
+    padding: 0 5%;
+    margin: 0;
+    color: black;
+    text-align: left;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 33px;
+}
+
+aside {
+    position:fixed;
+    text-align: center;
+    top: 20%;
+    padding:5%;
+}
+
+aside > ul li {
+    color: gray;
+    padding: 2px;
+    list-style-type: none;
+    font-size: 25px;
+    margin: 15px 0;
+} 
+
+.recommendPost {
+    background: #FAFAFA;
+    padding: 1%;
+    text-align: center;
+}
+
+section {
+    background: white;
+    display: inline-block;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 4px;
+    height: 320px;
+    width: 23%;
+    margin: 1% 5px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .05)
+}
+
+/* 
+Photo by Sharon McCutcheon on Unsplash
+Photo by Simone Hutsch on Unsplash
+Photo by Jared Sluyter on Unsplash
+*/
+.picture {
+    height: 100px;
+    width: 100%;
+    background: url("images/photo1.jpg");
+    border-radius: 4px 4px 0 0 ;
+}
+
+#photo1 {
+    background: url("images/photo1.jpg");
+}
+
+#photo2 {
+    background: url("images/photo2.jpg");
+}
+
+#photo3 {
+    background: url("images/photo3.jpg");
+}
+
+.description {
+    display: inline-block;
+    text-align: left;
+    width: 84%;
+    padding: 4% 2%;
+    color: gray;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.star {
+    width: 10%;
+    display: inline-block;
+    color: gray;
+}
+
+.postTitle {
+    width: 100%;
+    height: 25px;
+}
+/*
+Photo by Charles 🇵🇭 on Unsplash
+Photo by Melinda Gimpel on Unsplash
+Photo by Kvistholt Photography on Unsplash
+*/
+
+.postInfo {
+    padding-top: 5%;
+    width: 100%;
+    height: 100px;
+}
+
+.autohorAvatar {
+    padding-top: 5px;
+    margin-left:2%;
+    width: 10%;
+    border-radius: 50%;
+    float:left;
+}
+.autohorName {
+    width: 35%;
+    float:left;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 5%;
+    margin: 0;
+}
+.authorClap {
+    padding-top: 5px;
+    text-align: left;
+    font-size: 25px;
+    width:20%;
+    height:60px;
+    float:left;
+}
+
+.bookMark {
+    font-size: 35px;
+    width:20%;
+    height:60px;
+    float:left;
+}
+
+
+
