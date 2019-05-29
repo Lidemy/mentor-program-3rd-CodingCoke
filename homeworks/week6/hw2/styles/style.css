@@ -32,7 +32,6 @@ nav > ul li {
     vertical-align: baseline;
     font-size: 24px;
     color: gray;
-
 }
 
 nav > ul li > button {
@@ -165,6 +164,7 @@ Photo by Jared Sluyter on Unsplash
     width: 100%;
     height: 25px;
 }
+
 /*
 Photo by Charles 🇵🇭 on Unsplash
 Photo by Melinda Gimpel on Unsplash
@@ -178,34 +178,36 @@ Photo by Kvistholt Photography on Unsplash
 }
 
 .autohorAvatar {
+    float:left;
     padding-top: 5px;
     margin-left:2%;
     width: 10%;
     border-radius: 50%;
-    float:left;
 }
+
 .autohorName {
-    width: 35%;
     float:left;
+    width: 35%;
     font-size: 20px;
     text-align: left;
     padding-left: 5%;
     margin: 0;
 }
+
 .authorClap {
+    float:left;
     padding-top: 5px;
     text-align: left;
     font-size: 25px;
     width:20%;
     height:60px;
-    float:left;
 }
 
 .bookMark {
+    float:left;
     font-size: 35px;
     width:20%;
     height:60px;
-    float:left;
 }
 
 
