@@ -1,0 +1,24 @@
+@media (max-width: 1024px) {
+    header {
+        padding: 10% 5% 3% 5%; 
+        background-size: auto;
+    }
+
+    section {
+        max-width: 100%;
+    }
+
+    section > img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 415px) {
+    header {
+        min-width: 400px;
+    }
+    
+    section {
+        max-width: 400px;
+    }
+}

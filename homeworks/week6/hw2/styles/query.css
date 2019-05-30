@@ -1,0 +1,52 @@
+@media (max-width: 1024px) {   
+    #MediumIcon {
+        margin: 0 0 0 0;
+        padding: 20px;
+        font-size: 35px;
+        line-height: 25px;
+        position: absolute;
+        left: 2%;
+    }
+    nav > ul {
+        right: 2%
+    }
+    header {
+        padding: 0 5%;
+        font-size: 36px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    article {
+        padding: 0 5%;
+    }
+
+    section {
+        width: 80%;
+    }
+
+    .description {
+        padding: 1% 2%;
+    }
+
+}
+
+@media (max-width: 512px) {   
+    .autohorName {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .authorClap {
+        font-size: 20px;
+    }
+    
+    .bookMark {
+        font-size: 30px;
+    }
+}

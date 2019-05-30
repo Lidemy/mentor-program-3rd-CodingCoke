@@ -1,0 +1,125 @@
+﻿html {
+    font-family: "微軟正黑體";
+    color:#202523;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 2%;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: #616D70;
+    color: white;
+}
+
+nav > span {
+    display: inline-block;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav > a {
+    color: #A9B1AE;
+    padding: 8px;
+    font-size: 17px;
+}
+
+nav > a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+header {
+    max-width: 100%;
+    background: url("images/booksBackground.jpg");
+    background-size: cover;
+    padding: 5% 5% 3%; 
+    box-shadow: 2px 2px 3px #9DA5A2
+}
+/* Photo by Sharon McCutcheon on Unsplash */
+
+.intro {
+    max-width: 960px;
+    margin: auto;
+}
+
+.intro span {
+    color:	#202523;
+    font-size: 76px;
+    font-family: Arial;
+}
+
+.intro > button {
+    background: #5B6461;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    padding: 15px 30px; 
+    box-shadow: 1px 1px 1px gray;
+}
+
+.intro > button:hover {
+    background: #645B5E;
+    transition-property: background;
+    transition-duration: 0.5s;
+}
+
+main {
+    max-width: 1024px;
+    margin: 2% auto 2%;
+}
+
+section {
+    display: inline-block;
+    padding: 0 2% 0;
+    max-width: 29%;
+}
+
+section > img {
+    width: 300px;
+}
+
+section > button {
+    text-decoration: none;
+    background: #5B6461;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px  20px;
+}
+
+section > button:hover {
+    background:#645B5E;
+    transition-property: background;
+    transition-duration: 0.5s;
+}
+
+footer {
+    max-width: 1024px;
+    margin: auto;
+    padding: 2%;
+    font-size: 16px;
+    margin-bottom: 5%;
+}
+
+footer > hr {
+    background: #9AA39F;
+    border: 0;
+    height: 2px;
+}
+
