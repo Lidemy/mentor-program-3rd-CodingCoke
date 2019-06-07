@@ -1,3 +1,15 @@
+@media (max-width: 1140px) {   
+    .autohorName {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .authorClap {
+        font-size: 22px;
+    }
+}
+
+
+
 @media (max-width: 1024px) {   
     #MediumIcon {
         margin: 0 0 0 0;
@@ -35,15 +47,20 @@
         padding: 1% 2%;
     }
 
+    .autohorName {
+        font-size: 20px;
+    }
 }
+
+
 
 @media (max-width: 512px) {   
     .autohorName {
-        font-size: 14px;
-        line-height: 21px;
+        font-size: 12px;
+        line-height: 18px;
     }
     .authorClap {
-        font-size: 20px;
+        font-size: 14px;
     }
     
     .bookMark {
