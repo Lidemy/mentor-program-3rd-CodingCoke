@@ -51,7 +51,7 @@ function gameJudge() {
     isFinish = true;
   } else if (isFinish !== true && isColorChange !== false) {
     score = (new Date() - startTime) / 1000;
-    alert(`你的成績 ${score} '秒`);
+    alert(`你的成績 ${score} 秒`);
     elementTryAgain.style.display = 'inline';
     isFinish = true;
     scoreArray.push(score);
