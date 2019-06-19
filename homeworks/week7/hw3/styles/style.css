@@ -1,0 +1,41 @@
+﻿
+html {
+    font-family: 'sans-serif', 'Courier New', Courier, monospace;
+}
+
+
+.calculator {
+    margin: 100px auto;
+    width: 500px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.result {
+    text-align: right;
+    font-size: 60px;
+    margin: 10px auto;
+    width: 480px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.row-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-btn > button {
+
+    width: 100px;
+    height: 40px;
+    margin:2px 3px;
+}
+
+#equal {
+    width: 200px;
+}
+
+
