@@ -3,7 +3,6 @@ html {
     font-family: 'sans-serif', 'Courier New', Courier, monospace;
 }
 
-
 .calculator {
     margin: 100px auto;
     width: 500px;
@@ -28,14 +27,18 @@ html {
 }
 
 .row-btn > button {
-
     width: 100px;
     height: 40px;
     margin:2px 3px;
+    border-width: 0.5px;
+    border-color: black;
 }
 
 #equal {
-    width: 200px;
+    width: 231px;
+    background-color: orange;
+    border-width: 0.5px;
+    border-color: black;
 }
 
 
