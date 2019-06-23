@@ -1,0 +1,93 @@
+﻿html {
+    background:#F8EDE6;
+    font-family: '微軟正黑體';
+}
+
+.banner {
+    background-image: url("img/background.jpg");
+    width: 100%;
+    height: 280px;
+}
+
+.questionnaire {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: white; 
+    border-top: 8px solid #FF894B;
+    margin: 10% auto;
+    max-width: 600px;
+    padding: 20px 40px;
+    box-shadow: 0px 0px 3px 1px #9DA5A2;
+}
+
+.form_input {
+    padding: 0 10px;
+}
+p {
+    font-size: 14px;
+}
+
+.reminder {
+    display: block;
+    color:red;
+}
+
+.star {
+    color: red;
+    padding: 5px;
+}
+
+.warning {
+    color: red;
+    visibility: hidden;
+}
+
+.text_input {
+    width: 50%;
+    border: 0;
+    border-bottom-color: rgba(0,0,0,0.5);
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px; 
+}
+
+.text_input:focus{
+    outline:none;
+    border-color: red;
+    transition:all 0.2s;
+}
+
+.text_input_more {
+    width: 90%;
+    border: 0;
+    border-bottom-color: rgba(0,0,0,0.5);
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px; 
+}
+
+.text_input_more:focus{
+    outline:none;
+    border-color: red;
+    transition:all 0.2s;
+}
+
+.submit {
+    margin-top: 50px;
+    background-color: #1A73E8;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+h5 {
+    color: gray;
+    font-weight: 300;
+}
+

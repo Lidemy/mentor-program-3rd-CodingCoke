@@ -1,0 +1,35 @@
+﻿h1 {
+    margin: 0;
+    letter-spacing: 7px;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tryAgain {
+    margin: 10px;
+    padding: 10px;
+    border-radius:10%;
+    display: none;
+}
+
+aside {
+    width: 15%;
+    background-color: pink;
+    float: right;
+    padding: 1%;
+}
+
+.instruction {
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+.rank {
+    text-align: center;
+}
