@@ -1,0 +1,116 @@
+﻿* {
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+nav {
+    background: #24292E;
+    text-align: right;
+    color: white;
+    font-size: 18px;
+}
+
+nav > a {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav > a:nth-child(2) {
+    margin-right: 10%;
+    border: white 1px solid;
+    padding: 3px;
+    border-radius: 5%;
+}
+
+main {
+    text-align: center;
+    margin: auto;
+    max-width: 760px;
+    padding-bottom: 5%;
+}
+
+.message_form {
+    padding: 15px;
+    border: gray 2.5px solid;
+}
+
+.message_form > h3 {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+.message_form > .message_input{
+    display: inline-block;
+    line-height: 2;
+    width: 75%;
+}
+
+.message_form > button {
+    background: white;
+    border: black 2px solid;
+    margin-top: 15px;
+    margin-left: 90%;
+}
+
+.signin_form > button {
+    background: white;
+    border: black 2px solid;
+    margin-left: 20px;
+}
+
+.signin_form > input {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.message_form > button:hover {
+    background:grey;
+    color: white;
+}
+
+.message_info {
+    display: flex;
+    border: gray 1px solid;
+    margin-top: 10px;
+    position: relative;
+}
+
+.message_info > .nickname {
+    text-align: center;
+    padding-left: 5px;
+    width:15%;
+    border-right: gray 1px solid;
+}
+
+.message_info > .message {
+    padding-left: 15px;
+    text-align: left;
+    width: 80%;
+    position: relative;
+}
+
+.message_info > .message_time {
+    width: 10%;
+
+}
+
+.delete_message {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.delete_message input[type=submit] {
+    font-size: 15px;
+    width: 70px;
+    background: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px black solid; 
+}
+
+
+
