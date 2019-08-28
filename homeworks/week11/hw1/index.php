@@ -32,7 +32,7 @@
                 echo "<h4>請先登入或註冊，才可以使用留言功能</h4>";
             } else {
                 $token = $_COOKIE['token'];
-                $sql = "SELECT * from users_certificate where token =  '".$token."'";
+                $sql = "SELECT * from codingcoke_users_certificate where token =  '".$token."'";
                 $result = $conn->query($sql);
                 $row = $result->fetch_assoc();
                 $user = $row['user_name'];
