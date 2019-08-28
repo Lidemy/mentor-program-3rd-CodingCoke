@@ -94,6 +94,21 @@ main {
 
 .message_info > .message_time {
     width: 10%;
+}
+
+.message_info input[type=submit] {
+    font-size: 15px;
+    width: 70px;
+    background: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px black solid; 
+}
+
+.edit_message {
+    position: absolute;
+    bottom: 10%;
+    right: 21%;
 
 }
 
@@ -103,14 +118,7 @@ main {
     right: 10%;
 }
 
-.delete_message input[type=submit] {
+.page a {
     font-size: 15px;
-    width: 70px;
-    background: white;
-    cursor: pointer;
-    border-radius: 15px;
-    border: 1px black solid; 
+    margin-left: 5px;
 }
-
-
-

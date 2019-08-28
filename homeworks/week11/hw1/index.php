@@ -47,8 +47,27 @@
         ?>
         </form>
         <?php
-            // LIMIT 0, 50 => 從第 1 筆資料開始，顯示 50 筆資料
-            $sql = 'SELECT * from codingcoke_message ORDER BY created_at DESC LIMIT 0, 50';
+            // 要做分頁所要用到的幾個數字
+            $count_sql = 'SELECT * from codingcoke_message ORDER BY created_at';
+            $result = $conn->query($count_sql);
+            $count = $result->num_rows; 
+            $sizePerPage = 20;
+            $totalPage = ceil($count / $sizePerPage);
+            // 如果 page 沒有設定，就是 1
+            if (!isset($_GET['page'])){
+                $page=1;
+            } else {
+                $page = intval($_GET["page"]);
+            }
+            $start = ($page - 1) * $sizePerPage;
+            echo "<div class='page'>";
+            for ($i = 1; $i <= $totalPage; $i++) {
+                echo "<a href='./index.php?page=$i'>$i</a>";
+            }
+            echo "</div>";
+            
+            // 用 LIMIT 與前面設定的數字，讓網頁依據分頁抓取資料庫資料
+            $sql = "SELECT * from codingcoke_message ORDER BY created_at DESC LIMIT $start, $sizePerPage";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
@@ -56,6 +75,12 @@
                         echo "<div class='nickname'><h4>" . $row['nickname'] . "</h4></div>";
                         echo "<div class='message'>";
                             echo "<p>" . $row['content']. "</p>";
+                        echo "</div>";
+                        echo "<div class='edit_message'>";
+                            echo "<form  method='GET' action='./edit_message.php'>";
+                                echo "<input type='hidden' name='id' value=" . $row['message_id'] . "/>";
+                                echo "<input type='submit' value='edit'/>";
+                            echo "</form>";
                         echo "</div>";
                         echo "<div class='delete_message'>";
                             echo "<form  method='POST' action='./delete_message.php'>";
