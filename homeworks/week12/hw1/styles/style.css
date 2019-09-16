@@ -1,0 +1,162 @@
+﻿* {
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+nav {
+    background: #24292E;
+    text-align: right;
+    color: white;
+    font-size: 18px;
+}
+
+nav > a {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav > a:nth-child(2) {
+    margin-right: 10%;
+    border: white 1px solid;
+    padding: 3px;
+    border-radius: 5%;
+}
+
+main {
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+    padding-bottom: 5%;
+}
+
+.message_form {
+    margin: auto;
+    width: 100%;
+    padding: 10px 0;
+    border: gray 2.5px solid;
+}
+
+.message_form > h3 {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.message_form > .message_input{
+    display: inline-block;
+    line-height: 2;
+    width: 70%;
+}
+
+.message_form > button {
+    background: white;
+    border: black 2px solid;
+    margin-top: 15px;
+    margin-left: 90%;
+}
+
+.signin_form > button {
+    background: white;
+    border: black 2px solid;
+    margin-left: 20px;
+}
+
+.signin_form > input {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.message_form > button:hover {
+    background:grey;
+    color: white;
+}
+
+.message_info {
+    display: flex;
+    flex-wrap: wrap;
+    border: gray 1px solid;
+    position: relative;
+    margin-top: 5px;
+}
+
+.message_info~div {
+    margin-top: 30px;
+} 
+
+.message_info > .nickname {
+    text-align: center;
+    padding-left: 5px;
+    width:16%;
+}
+
+.message_info > .message {
+    padding-left: 15px;
+    text-align: left;
+    width: 70%;
+    position: relative;
+}
+
+.message_info > .message_time {
+    width: 10%;
+}
+
+.message_info input[type=submit] {
+    font-size: 15px;
+    width: 70px;
+    background: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px black solid; 
+}
+
+.edit_message {
+    position: absolute;
+    bottom: 5%;
+    right: 25%;
+
+}
+
+.delete_message {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}
+
+.page a {
+    font-size: 16px;
+    margin: 5px;
+}
+
+.sub-message_info {
+    width: 100%;
+    border-top: gray 1px solid;
+    position: relative;
+}
+
+.sub-message_nickname {
+    display: inline-block;
+    text-align: center;
+    width:15%;
+
+}
+
+.sub-message_content {
+    font-size: 16px;
+    display: inline-block;
+    padding-left: 15px;
+    text-align: left;
+    width: 70%;
+    position: relative;
+}
+
+.sub-message_time {
+    display: inline-block;
+    font-size: 12px;
+    width: 10%;
+    padding-top: 5px;
+}
+
+.sub-message-by-author {
+    background-color:	#ffe4e1;
+}
