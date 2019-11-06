@@ -1,0 +1,123 @@
+nav {
+    background:#E5CE9A;
+}
+
+nav > ul {
+    margin: auto;
+}
+@media (min-width: 576px) {
+    nav > ul {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    nav > ul {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 1200px) {
+    nav > ul {
+        max-width: 1140px;
+    }
+}
+
+.container {
+    padding: 20px;
+}
+
+.reminder {
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+    border: solid #BECBDD 3px;
+    padding: 15px;
+}
+
+
+.form-control {
+    width: 50%;
+    margin: auto;
+    display: inline;
+}
+
+.form > .btn {
+    margin-left: 15px;
+}
+
+.comment {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 5px;
+    background:  #BECBDD;
+    box-shadow: #2D2254  0 1px 3px;
+    position: relative;
+}
+
+.comment__author {
+    border-right: solid #2D2254 0.5px;
+}
+
+.comment__content {
+    border-right: solid #2D2254 0.5px;
+}
+
+.sub-comments {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.sub-comment {
+    background:#EBEBEB;
+    margin-top: 8px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.sub-comment__author {
+    border-right: solid gray 0.5px;
+}
+
+.add-sub-comment > .btn {
+    margin-right: 10px;
+}
+
+.by-author {
+    background-color: #F7EBD2;
+}
+
+.delete-comment {
+    font-size: 1.2rem;
+    color: gray;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.edit-button > i {
+    font-size: 1.2rem;
+    color: gray;
+    display: inline-block;
+}
+
+.page {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.page > ul{
+    display: inline-block;
+    text-align: center;
+}
+
+.page > ul > li {
+    display: inline-block;
+}

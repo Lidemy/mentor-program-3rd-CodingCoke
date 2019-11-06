@@ -3,7 +3,8 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
-    jest: true
+    jest: true,
+    jquery: true
   },
   extends: 'airbnb',
   globals: {
@@ -20,6 +21,7 @@ module.exports = {
     'react',
   ],
   rules: {
-    "no-console": "off"
+    "no-console": "off",
+    "no-alert": "off"
   },
 };
