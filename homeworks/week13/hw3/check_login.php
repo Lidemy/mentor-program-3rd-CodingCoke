@@ -1,13 +1,5 @@
-
-
 <?php include_once('./conn.php');?>
 <?php include_once('./utils.php');?>
-<?php     
-    if (!isset($_SESSION)) {
-        session_start();
-    }
-?>
-
 <?php
     $user = null;
     if (!empty($_SESSION['nickname'])) {
