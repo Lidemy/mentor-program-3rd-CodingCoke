@@ -25,7 +25,7 @@
 7. 標題依照規範填寫，若是第一周的作業，就打[Week1]，內容貼上剛剛複製的網址，下面可以打心得。
 8. 按下「Submit new issue」。
 9. 接下來就是老師改作業時間，看是否有要修改的地方。
-10.若是看到 Huli 將 issue close了，將遠端上的分支 merge 到 master，表示作業沒有問題。
-11.來到 CLI 輸入 `git checkout master`。
-11. `git pull origin master`，將遠端的 master 下載更新回到本機。
-12.最後  `git branch -d week` 將分支刪除，完成這一周的作業流程。
+10. 若是看到 Huli 將 issue close了，將遠端上的分支 merge 到 master，表示作業沒有問題。
+11. 來到 CLI 輸入 `git checkout master`。
+12. `git pull origin master`，將遠端的 master 下載更新回到本機。
+13. 最後  `git branch -d week` 將分支刪除，完成這一周的作業流程。
