@@ -1,6 +1,11 @@
-<?php require_once('./utils.php') ?>
-<?php require_once('./check_login.php') ?>
-<?php require_once('./conn.php');?>
+<?php
+    session_start();
+    require_once('./utils.php');
+    require_once('./check_login.php'); 
+    require_once('./conn.php');
+?>
+?>
+
 <?php
 
 if (isset($_POST['message_id'])) {
