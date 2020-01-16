@@ -19,7 +19,6 @@ function getHtml(value, id) {
         </div>
     </li>`;
 }
-
 // 清空列表再重新 render 出所有的代辦事項 list
 function render() {
   $('.todo-list').empty();
@@ -41,6 +40,7 @@ function removeTodo(id) {
   render();
 }
 
+
 $(document).ready(() => {
   // 新增任務
   $('body').on('keydown', (e) => {
@@ -54,12 +54,12 @@ $(document).ready(() => {
   });
 
   // 移除任務
-  $('body').on('click', '.btn-danger', () => {
+  $('body').on('click', '.btn-danger', function () {
     removeTodo($(this).attr('id'));
   });
 
   // 利用 toggle 完成任務狀態轉換
-  $('body').on('click', '.task-status', () => {
+  $('body').on('click', '.task-status', function () {
     $(this).toggleClass('btn-success');
     $(this).toggleClass('btn-primary');
     $(this).toggleClass('done');
