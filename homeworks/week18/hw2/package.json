@@ -1,0 +1,13 @@
+{
+  "name": "hw2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"webpack --mode development",
+    "bulid":"webapck --mode production"
+  },
+  "author": "",
+  "license": "ISC"
+}
